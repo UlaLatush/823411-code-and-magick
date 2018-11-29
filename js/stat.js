@@ -75,8 +75,6 @@ window.renderStatistics = function (ctx, names, times) {
   // render graph
   var normTimes = normalizeTimes(times);
   for (var i = 0; i < names.length; i++) {
-
     renderBar(ctx, CLOUD_X + BORDER_SIZE + (BAR_GAP + BAR_WIDTH) * i, names[i], times[i], normTimes[i]);
-
   }
 };
